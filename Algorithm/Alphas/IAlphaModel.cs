@@ -31,5 +31,6 @@ namespace QuantConnect.Algorithm.Framework.Alphas
         /// <param name="data">The new data available</param>
         /// <returns>The new insights generated</returns>
         IEnumerable<Insight> Update(QCAlgorithm algorithm, Slice data);
+        IEnumerable<orderEvents> Update(QCAlgorithm algorithm, OrderEvent orderEvent);
     }
 }
