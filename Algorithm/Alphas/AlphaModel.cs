@@ -46,6 +46,11 @@ namespace QuantConnect.Algorithm.Framework.Alphas
         {
             throw new System.NotImplementedException("Types deriving from 'AlphaModel' must implement the 'IEnumerable<Insight> Update(QCAlgorithm, Slice) method.");
         }
+        
+        public virtual IEnumerable<orderEvents> Update(QCAlgorithm algorithm, OrderEvent orderEvent)
+        {
+            throw new System.NotImplementedException("Types deriving from 'AlphaModel' must implement the 'IEnumerable<orderEvents> Update(QCAlgorithm, OrderEvent) method.");
+        }
 
         /// <summary>
         /// Event fired each time the we add/remove securities from the data feed
